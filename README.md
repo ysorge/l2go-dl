@@ -6,15 +6,9 @@ The Lecture2Go Video Downloader script is a tool designed to download videos, in
 password-protected ones, from the Lecture2Go video portals. Lecture2Go is an online 
 video portal designed for universities, where people can watch, listen to, and download 
 recorded lectures. The lecture recording system, developed at the 'Regionales 
-Rechenzentrum' (RRZ), makes it possible to synchronously record the speaker and their 
-presentation.
-
-## Features
-
-- Download videos from Lecture2Go portals.
-- Support for password-protected videos.
-- Option to merge all video chunks into a single video file.
-- Option to create separate videos for each chunklist.
+Rechenzentrum' (RRZ) of University of Hamburg, makes it possible to synchronously 
+record the speaker and their presentation. More information: 
+[Lecture2Go website](https://lecture2go.uni-hamburg.de/).
 
 ## Requirements
 
