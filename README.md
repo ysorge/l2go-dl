@@ -18,23 +18,23 @@ presentation.
 
 ## Requirements
 
-- `bash`
-- `curl`
-- `ffmpeg`
+- [`bash`](https://www.gnu.org/software/bash/)
+- [`curl`](https://curl.se/)
+- [`ffmpeg`](https://ffmpeg.org/)
 
 ## Usage
 
 ### Command-line Arguments
 
-- `-m, --merge`: Merge all chunklists into a single video file.
 - `-p, --password PASSWORD`: Password for the video page.
+- `-m, --merge`: Merge all chunklists into a single video file.
 - `-h, --help`: Display the help message.
 - `url`: URL of the video page (can be provided as the last argument).
 
 ### Example Usage
 
 ```bash
-./l2go-dl.sh --password "your_password" "https://lecture2go.uni-hamburg.de/l2go/-/get/v/abc12345"
+./l2go-dl.sh --password "your_password" https://lecture2go.uni-hamburg.de/l2go/-/get/v/abc12345
 ```
 
 ## Detailed Steps
