@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Function to print usage information
-print_usage() {
+print_help() {
     echo "Usage: $0 [-m] [-p password | --password password] [-h | --help] [URL]"
     echo "  -m, --merge       Merge all chunklists into a single video file"
     echo "  -p, --password    Password for the video page"
@@ -36,8 +36,6 @@ draw_progress_bar() {
   printf "] %d/%d" "$progress" "$total"
 }
 
-
-
 # Parse the command-line options
 merge_all=false
 password=""
@@ -57,7 +55,7 @@ while [[ $# -gt 0 ]]; do
             shift
             ;;
         -h|--help)
-            print_usage
+            print_help
             exit 0
             ;;
         *)
@@ -66,7 +64,7 @@ while [[ $# -gt 0 ]]; do
                 shift
             else
                 echo "Unknown option or invalid URL: $1"
-                print_usage
+                print_help
                 exit 1
             fi
             ;;
@@ -78,6 +76,7 @@ if [ -z "$video_page_url" ]; then
     read -p "Enter the video page URL: " video_page_url
     if ! is_valid_url "$video_page_url"; then
         echo "Error: Invalid URL."
+        print_help
         exit 1
     fi
 fi
